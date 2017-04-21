@@ -10,7 +10,7 @@ class PagesEditController extends Controller
 {
     //
     public function execute(Page $page, Request $request) {
-        /*$page = Page::find($id); после (Page $page,...) это ненужно */
+        /* $page = Page::find($id); после (Page $page,...) это ненужно */
 
         if ($request->isMethod('delete')) {
             $page->delete();
@@ -57,6 +57,7 @@ class PagesEditController extends Controller
                 'title' => 'Редактирование страницы - '.$old['name'],
                 'data'  => $old
             ];
+
             return view('admin.pages_edit',$data);
         }
     }

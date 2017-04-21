@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Page;
 use Illuminate\Http\Request;
-//use Illuminate\Support\Facades\Validator;
 use Validator;
 
 class PagesAddController extends Controller
@@ -20,6 +19,7 @@ class PagesAddController extends Controller
                 'required' => "Поле :attribute обязятельно к заполнению.",
                 'unique' => "Поле :attribute должно быть уникальным. Измените значение."
             ];
+
             $validator = Validator::make($input, [
                 'name' => 'required|max:255',
                 'alias' => 'required|unique:pages|max:255',

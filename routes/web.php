@@ -23,7 +23,6 @@ Route::get('/page/{alias}', [
 
 Route::auth();
 
-
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
 
     Route::get('/', function () {
