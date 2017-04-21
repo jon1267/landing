@@ -24,7 +24,7 @@
                     <td>
                     <form action="{{ route('pagesEdit', ['$page' => $page->id]) }}" class="form-horizontal" method="post">
                         <!-- <input type="hidden" name="_method" value="delete">
-                            тоже самое (строка ниже), через хелрер лары-->
+                            тоже самое (строка ниже), через хелрер лары -->
                         {{ csrf_field() }}
                         {{ method_field('DELETE') }}
                         <input type="submit" value="Удалить" class="btn btn-danger btn-sm">

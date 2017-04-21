@@ -41,7 +41,8 @@
 
 <!--Hero_Section-->
 
-@yield('content')
-
+<!-- Content_section -->
+    @yield('content')
+<!-- End Content_section -->
 </body>
 </html>
